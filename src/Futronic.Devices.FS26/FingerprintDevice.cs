@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Threading;
 
-namespace ConsoleApp1
+namespace Futronic.Devices.FS26
 {
-    internal class Device : IDisposable
+    public class Device : IDisposable
     {
         private const int FingerPresenseCheckIntervalInMs = 50;
         private const int FingerDetectionContrastThreshold = 800;
@@ -82,7 +82,7 @@ namespace ConsoleApp1
             FingerDetected?.Invoke(this, EventArgs.Empty);
         }
 
-        protected LedState GetLedState()
+        public LedState GetLedState()
         {
             LibScanApi.ftrScanGetDiodesStatus(this.handle, out bool greenIsOn, out bool redIsOn);
 
@@ -154,7 +154,7 @@ namespace ConsoleApp1
         }
     }
 
-    internal class LedState
+    public class LedState
     {
         public bool GreenIsOn { get; set; }
 

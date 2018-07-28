@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace Futronic.Devices.FS26
 {
-    class DeviceAccessor
+    public class DeviceAccessor
     {
         public Device Open()
         {
