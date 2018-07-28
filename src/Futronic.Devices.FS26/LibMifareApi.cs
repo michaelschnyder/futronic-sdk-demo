@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Futronic.Devices.FS26
 {
-    static class LibMilfareApi
+    static class LibMifareApi
     {
         [DllImport("ftrMFAPI.dll")]
         internal static extern IntPtr ftrMFOpenDevice();

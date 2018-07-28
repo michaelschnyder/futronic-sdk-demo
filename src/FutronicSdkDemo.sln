@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Futronic.Devices.FS26", "Fu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadFingerprintDemo", "ReadFingerprintDemo\ReadFingerprintDemo.csproj", "{2B49DA26-0829-4DF9-A337-2CD661AE5504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadMilfareCardDemo", "ReadMilfareCardDemo\ReadMilfareCardDemo.csproj", "{E3C87363-E4E6-46EB-BD7E-9B92990CB7FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadMifareCardDemo", "ReadMifareCardDemo\ReadMifareCardDemo.csproj", "{E3C87363-E4E6-46EB-BD7E-9B92990CB7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace Futronic.Devices.FS26
 {
-    public class Device : IDisposable
+    public class FingerprintDevice : IDisposable
     {
         private const int FingerPresenseCheckIntervalInMs = 50;
         private const int FingerDetectionContrastThreshold = 800;
@@ -18,7 +18,7 @@ namespace Futronic.Devices.FS26
         public event EventHandler FingerDetected;
         public event EventHandler FingerReleased;
 
-        public Device(IntPtr handle)
+        public FingerprintDevice(IntPtr handle)
         {
             this.handle = handle;
             this.fingerDetectionTimer = new Timer(this.FingerDetectionCallback, null, Timeout.Infinite, Timeout.Infinite);

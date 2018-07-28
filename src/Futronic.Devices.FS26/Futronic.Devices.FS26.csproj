@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardReader.cs" />
+    <Compile Include="CardType.cs" />
     <Compile Include="DeviceAccessor.cs" />
     <Compile Include="FingerprintDevice.cs" />
-    <Compile Include="LibMilfareApi.cs" />
+    <Compile Include="LibMifareApi.cs" />
     <Compile Include="LibScanApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

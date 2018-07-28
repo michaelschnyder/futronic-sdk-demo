@@ -12,7 +12,7 @@ namespace ReadFingerprintDemo
 
             var accessor = new DeviceAccessor();
 
-            using (var device = accessor.Open())
+            using (var device = accessor.AccessFingerprintDevice())
             {
                 device.SwitchLedState(false, false);
 
@@ -38,7 +38,7 @@ namespace ReadFingerprintDemo
                     device.SwitchLedState(false, true);
                 };
 
-                Console.WriteLine("Device Opened");
+                Console.WriteLine("FingerprintDevice Opened");
 
                 device.StartFingerDetection();
                 device.SwitchLedState(false, true);

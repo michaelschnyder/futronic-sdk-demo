@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E3C87363-E4E6-46EB-BD7E-9B92990CB7FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReadMilfareCardDemo</RootNamespace>
-    <AssemblyName>ReadMilfareCardDemo</AssemblyName>
+    <RootNamespace>ReadMifareCardDemo</RootNamespace>
+    <AssemblyName>ReadMifareCardDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
