@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Futronic.Devices.FS26;
 
-namespace ConsoleApp1
+namespace ReadFingerprintDemo
 {
     class Program
     {
