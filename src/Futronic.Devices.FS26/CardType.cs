@@ -1,6 +1,6 @@
 ﻿namespace Futronic.Devices.FS26
 {
-    enum CardType
+    public enum CardType
     {
         Invalid = 0,
         OtherOrCreditCard = 4,

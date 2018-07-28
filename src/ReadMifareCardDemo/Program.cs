@@ -13,13 +13,18 @@ namespace ReadMifareCardDemo
 
             using (var device = accessor.AccessCardReader())
             {
-                var sn = device.GetCardSerialNumber();
+                device.CardDetected += (sender, eventArgs) =>
+                {
+                    Console.WriteLine($"Card available. Type: {eventArgs.Type.ToString()}, SN: {eventArgs.SerialNumber:D}, 0x{eventArgs.SerialNumber:X8}");
+                };
 
-                Console.WriteLine($"Serial number: {sn:D}, 0x{sn:X}");
+                device.CardRemoved += (sender, eventArgs) => Console.WriteLine("Card removed");
 
+                device.StartCardDetection();
+                Console.WriteLine("Card detection has started, please place card on device or hit enter to quit");
+
+                Console.ReadLine();
             }
-
-            Console.ReadLine();
         }
     }
 }
