@@ -42,6 +42,10 @@ namespace Futronic.Devices.FS26
         {
             fingerDetectionTimer.Change(0, FingerPresenseCheckIntervalInMs);
         }
+        public void StopFingerDetection()
+        {
+            fingerDetectionTimer.Change(Timeout.Infinite, Timeout.Infinite);
+        }
 
         private void FingerDetectionCallback(object state)
         {
