@@ -9,6 +9,8 @@ namespace ReadMifareCardDemo
         {
             Console.WriteLine("LibMifareApi Demo");
 
+            Console.WriteLine($"Last error {LibMifareApi.ftrMFGetLastError()}");
+
             var accessor = new DeviceAccessor();
 
             using (var device = accessor.AccessCardReader())

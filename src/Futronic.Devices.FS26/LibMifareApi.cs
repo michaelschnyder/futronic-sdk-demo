@@ -3,10 +3,13 @@ using System.Runtime.InteropServices;
 
 namespace Futronic.Devices.FS26
 {
-    static class LibMifareApi
+    public static class LibMifareApi
     {
         [DllImport("ftrMFAPI.dll")]
         internal static extern IntPtr ftrMFOpenDevice();
+
+        [DllImport("ftrMFAPI.dll")]
+        public static extern int ftrMFGetLastError();
 
         [DllImport("ftrMFAPI.dll")]
         internal static extern void ftrMFCloseDevice(IntPtr handle);
